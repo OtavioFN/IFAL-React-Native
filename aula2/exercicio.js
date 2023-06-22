@@ -1,27 +1,27 @@
+let heightInput = document.querySelector("#height");
+let weightInput = document.querySelector("#weight");
+let message = document.querySelector("#message");
 
+function calculateIMC(){
+    let heightValue = parseFloat(heightInput.value);
+    let weightValue = parseFloat(weightInput.value);
+    let imc = weightValue/(heightValue**2);
 
+    let status =  imc < 18.5
+    ? "Abaixo do peso"
+    : imc >= 18.5 && imc <= 24.9
+    ? "Peso normal"
+    : imc >= 25 && imc <= 29.9
+    ? "Sobrepeso"
+    : imc >= 30
+    ? "Obesidade"
+    : "Informe informações adequadas!";
 
-function calcular(){
-let weight = document.getElementById('peso').value
-let height = document.getElementById('altura').value
+    let text = `Your IMC rate is ${imc} and your status is ${status}`
 
-imc = (weight / height ** 2).toFixed(3)
+    message.innerHTML = text;
 
-let status1 = ''
+    heightInput.value = ''
+    weightInput.value = ''
 
-if (imc < 18.5){
-    status1 = 'Magreza'
-}else if(imc > 18.5 && imc < 24.9){
-    status1= 'Normal'
-}else if(imc > 25 && imc < 29.9){
-    status1 = 'Sobrepeso'
-}
-else if(imc > 30 && imc < 39.9){
-    status1 = 'Obesidade'
-}
-else if(imc > 40){
-    status1 = 'Obesidade grave'
-}
-
-document.write(`Seu imc é de ${imc} e seu status é de ${status1}`);
 }
