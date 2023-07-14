@@ -68,3 +68,51 @@ const numbersFilter = [1, 2, 3, 4];
 const evenNumbers = numbersFilter.filter((num) => num % 2 === 0);
 
 console.log(evenNumbers); // Output: [2, 4]
+
+/* find: O método find é usado para encontrar o primeiro elemento em um array que satisfaça uma determinada condição. Ele retorna o valor do primeiro elemento que passar no teste da função de callback, ou undefined se nenhum elemento for encontrado. */
+
+const numbersFind = [1, 2, 3, 4, 5];
+const evenNumber = numbersFind.find((num) => num % 2 === 0);
+
+console.log(evenNumber); // 2
+
+/* reduce: O método reduce é usado para reduzir os elementos de um array a um único valor. Ele executa uma função de callback em cada elemento do array, acumulando um resultado com base em cada iteração.
+Exemplo: */
+
+const numbersReduce = [1, 2, 3, 4, 5];
+const sum = numbersReduce.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+console.log(sum); // 15
+
+/* keys: O método keys retorna um novo objeto de tipo Array Iterator que contém as chaves (índices) de um array.
+Exemplo: */
+
+const fruitsKeys = ['apple', 'banana', 'orange'];
+const keys = Array.from(fruitsKeys.keys());
+
+console.log(keys); // [0, 1, 2]
+
+/* sort: O método sort é usado para ordenar os elementos de um array de acordo com uma função de comparação.
+Exemplo: */
+
+const numbersSorted = [3, 1, 4, 2, 5];
+numbersSorted.sort();
+
+console.log(numbersSorted); // [1, 2, 3, 4, 5]
+
+/* every: O método every verifica se todos os elementos de um array passam em um determinado teste fornecido por uma função de callback. Ele retorna true se todos os elementos passarem no teste e false caso contrário.
+Exemplo: */
+
+const numbersEvery = [2, 4, 6, 8, 10];
+const allEven = numbersEvery.every((num) => num % 2 === 0);
+
+console.log(allEven); // true
+
+/* some: O método some verifica se pelo menos um elemento de um array passa em um determinado teste fornecido por uma função de callback. Ele retorna true se algum elemento passar no teste e false caso contrário.
+Exemplo: */
+
+const numbersSome = [2, 4, 6, 8, 9];
+const hasOdd = numbersSome.some((num) => num % 2 !== 0);
+
+console.log(hasOdd); // true
+

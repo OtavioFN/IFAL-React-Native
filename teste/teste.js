@@ -46,3 +46,11 @@ let numberAlphabet = {
 
 
 console.log(alphabetPosition('Hi'))
+
+let obj = {
+    a: 's',
+    b: 'fda',
+    c: 'afsdf'
+}
+
+var hasKey = Object.keys(obj).some(x => x == key);
