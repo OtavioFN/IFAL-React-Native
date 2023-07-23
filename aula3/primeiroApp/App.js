@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
   }
 }); */
 
-import { StatusBar } from "expo-status-bar";
+/* import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
 import { Button } from "react-native";
 import { StyleSheet, Text, View, Image } from "react-native";
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
   textoAlinhado:{
     textAlign: "center"
   }
-});
+}); */
 
 /* import { StatusBar } from "expo-status-bar";
 import { useState } from "react";
@@ -269,7 +269,7 @@ const styles = StyleSheet.create({
   }
 }); */
 
-/* import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { View, Text, Button } from 'react-native';
 
 const App = () => {
@@ -306,13 +306,13 @@ const App = () => {
 
       <Button title="Exibir Frase Aleatória" onPress={exibirFraseAleatoria} />
       <Text>{frase}</Text>
-      <Text>
+{/*       <Text>
         {name}
         <Button title="Incrementar" onPress={incrementar} />
         {number}
-      </Text>
+      </Text> */}
     </View>
   );
 };
 
-export default App; */
+export default App;
