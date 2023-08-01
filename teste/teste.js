@@ -14,7 +14,7 @@ function alerta(){
     alert("alerta")
 } */
 
-function alphabetPosition(text) {
+/* function alphabetPosition(text) {
 let numberAlphabet = {
 'a': '1',
 'b': "2",
@@ -53,4 +53,7 @@ let obj = {
     c: 'afsdf'
 }
 
-var hasKey = Object.keys(obj).some(x => x == key);
+
+ */
+
+console.log(isNumeric('f'))
